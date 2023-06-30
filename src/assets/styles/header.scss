@@ -1,0 +1,13 @@
+header {
+    display:flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-evenly;
+    padding: 1%;
+    background-color: black;
+
+}
+header img{
+    width: 25vw;
+    border: 2px solid teal;
+}

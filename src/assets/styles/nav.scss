@@ -1,0 +1,18 @@
+nav {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 70vw;
+    align-items: center;
+
+    a{
+        text-decoration: none;
+        color:rgb(255, 174, 0);
+
+    }
+    a:hover{
+        color:teal;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
