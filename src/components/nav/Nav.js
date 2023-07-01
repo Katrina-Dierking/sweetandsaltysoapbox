@@ -5,12 +5,10 @@ import '../../assets/styles/nav.scss'
 const Nav = () => {
   return (
     <nav>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
+     
         <a href="https://sssblog.queenbeandesigncafe.com" target="blank">Blog</a>
-        <Link to="/store">Store</Link>
-        <Link to="/university">University</Link>
-        <Link to="/contact">Contact</Link>
+        <Link to="/store">Shop</Link>
+        <Link to="/university">Learn</Link>
     </nav>
   )
 }

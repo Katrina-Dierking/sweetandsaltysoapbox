@@ -2,17 +2,38 @@ nav {
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 70vw;
+    width: 55vw;
     align-items: center;
+    margin-top: 2%;
+    // background-color: teal;
+background: rgb(6,120,117);
+background: linear-gradient(0deg, rgba(6,120,117,1) 31%, rgba(66,179,213,1) 70%, rgba(0,151,178,1) 100%);
+    padding: 1%;
+    border-top-left-radius: 10% 90%;
+    border-top-right-radius: 10% 90%;
+    box-shadow: 10px 10px 15px grey;
 
     a{
         text-decoration: none;
-        color:rgb(255, 174, 0);
+        color:white;
 
     }
     a:hover{
-        color:teal;
+        color:rgb(255, 174, 0);;
         text-transform: uppercase;
         font-weight: bold;
     }
+}
+
+.bottomNav a{
+    color:black;
+    width: 50%;
+    padding: 1%;
+    text-decoration: none;
+}
+
+.bottomNav a:hover {
+    text-transform: uppercase;
+    font-weight: bold;
+    color:teal;
 }

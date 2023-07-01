@@ -1,12 +1,60 @@
 import React from 'react'
 import Layout from '../../components/layout/Layout'
+import '../../assets/styles/home.scss'
 
 const Home = () => {
   return (
     <Layout title="Home">
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum officiis consequuntur voluptatum sequi suscipit quaerat tempore. Iure, vitae, reprehenderit repudiandae necessitatibus cumque explicabo voluptatum in ea, quas doloribus aut veniam.</p>
+      <div class="wrapper">
+        <div>
+          <span class="dot"></span>
+        </div>
+        <div>
+          <span class="dot"></span>
+        </div>
+        <div>
+          <span class="dot"></span>
+        </div>
+        <div>
+          <span class="dot"></span>
+        </div>
+        <div>
+          <span class="dot"></span>
+        </div>
+        <div>
+          <span class="dot"></span>
+        </div>
+        <div>
+          <span class="dot"></span>
+        </div>
+        <div>
+          <span class="dot"></span>
+        </div>
+        <div>
+          <span class="dot"></span>
+        </div>
+        <div>
+          <span class="dot"></span>
+        </div>
+        <div>
+          <span class="dot"></span>
+        </div>
+        <div>
+          <span class="dot"></span>
+        </div>
+        <div>
+          <span class="dot"></span>
+        </div>
+        <div>
+          <span class="dot"></span>
+        </div>
+        <div>
+          <span class="dot"></span>
+        </div>
+      </div>
+      <p>Because taking a bath should be an escape!</p>
     </Layout>
-  )
+  );
 }
 
 export default Home
