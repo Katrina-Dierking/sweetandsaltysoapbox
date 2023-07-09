@@ -5,9 +5,10 @@ import BottomNav from '../nav/BottomNav'
 const Footer = () => {
   return (
     <footer>
-    <BottomNav />
-    <p> ©2023 Sweet and Salty Soap Box | All Rights Reserved</p>
-    <p>Powered by Queen Bean Design Cafe</p>
+      <hr></hr>
+      <BottomNav />
+      <p> ©2023 Sweet and Salty Soap Box | All Rights Reserved</p>
+      <p>Powered by Queen Bean Design Cafe</p>
     </footer>
     )
 }
