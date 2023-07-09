@@ -3,7 +3,7 @@ footer {
     width: 100vw;
     padding: 1%;
     color:black;
-    position:fixed;
+    position:relative;
     padding-top: 1%;
 
     hr {
@@ -11,5 +11,6 @@ footer {
         height: 7px;
         background-color: teal;
         border-radius:10px;
+        border: 1px solid black;
     }
 }

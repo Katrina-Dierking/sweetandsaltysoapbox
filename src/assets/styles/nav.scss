@@ -2,10 +2,10 @@ nav {
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 55vw;
+    width: 25vw;
+    height: 1cqmin;
     align-items: center;
     margin-top: 2%;
-    // background-color: teal;
 background: rgb(6,120,117);
 background: linear-gradient(0deg, rgba(6,120,117,1) 31%, rgba(66,179,213,1) 70%, rgba(0,151,178,1) 100%);
     padding: 1%;
@@ -47,6 +47,7 @@ background: linear-gradient(0deg, rgba(6,120,117,1) 31%, rgba(66,179,213,1) 70%,
     margin-top: 2%;
     background-color: rgb(253, 255, 198);
     padding: 2%;
+    border-bottom: 2px solid orange; 
 
 
     a {

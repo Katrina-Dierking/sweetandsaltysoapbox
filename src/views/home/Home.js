@@ -5,54 +5,8 @@ import '../../assets/styles/home.scss'
 const Home = () => {
   return (
     <Layout title="Home">
-      <div class="wrapper">
-        <div>
-          <span class="dot"></span>
-        </div>
-        <div>
-          <span class="dot"></span>
-        </div>
-        <div>
-          <span class="dot"></span>
-        </div>
-        <div>
-          <span class="dot"></span>
-        </div>
-        <div>
-          <span class="dot"></span>
-        </div>
-        <div>
-          <span class="dot"></span>
-        </div>
-        <div>
-          <span class="dot"></span>
-        </div>
-        <div>
-          <span class="dot"></span>
-        </div>
-        <div>
-          <span class="dot"></span>
-        </div>
-        <div>
-          <span class="dot"></span>
-        </div>
-        <div>
-          <span class="dot"></span>
-        </div>
-        <div>
-          <span class="dot"></span>
-        </div>
-        <div>
-          <span class="dot"></span>
-        </div>
-        <div>
-          <span class="dot"></span>
-        </div>
-        <div>
-          <span class="dot"></span>
-        </div>
-      </div>
-      <p>Because taking a bath should be an escape!</p>
+   
+      <p>Because taking a bath should be a personal escape!</p>
     </Layout>
   );
 }
