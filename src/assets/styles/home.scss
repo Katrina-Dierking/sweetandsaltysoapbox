@@ -23,7 +23,6 @@ div .dot {
   height: 10px;
   width: 10px;
   border-radius: 50px;
-/*   background: rgba(255, 255, 255, 0.5); */
   background:silver;
 
   position: absolute;
@@ -35,6 +34,8 @@ div .dot {
   top: 20%;
   left: 20%;
   animation: animate 8s linear infinite;
+   box-shadow: 1px 1px 5px purple;
+  
 }
 .wrapper div:nth-child(2) {
   top: 60%;
