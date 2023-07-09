@@ -37,3 +37,58 @@ background: linear-gradient(0deg, rgba(6,120,117,1) 31%, rgba(66,179,213,1) 70%,
     font-weight: bold;
     color:teal;
 }
+
+.secondary{
+    width: 100vw;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2%;
+    background-color: rgb(247, 248, 217);
+    padding: 2%;
+
+
+    a {
+        text-decoration: none;
+    }
+    a img{
+        width: 30px;
+        position:relative;
+        top:7px;
+        left:5px;
+        padding-right: 10px;
+
+    }
+}
+
+.linkOne {
+    color:hotpink;
+}
+.linkTwo {
+    color:teal;
+}
+.linkThree {
+    color:darkorange;
+}
+.linkFour {
+    color:red;
+}
+.linkFive {
+    color:navy;
+}
+.linkSix {
+    color:green;
+}
+
+.secondary .secIcon {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    width: 10%;
+    height:50px;
+
+    .secIcon span {
+           text-align: baseline;
+    }
+}
