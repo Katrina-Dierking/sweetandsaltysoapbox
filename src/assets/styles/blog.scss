@@ -1,0 +1,21 @@
+.blogBody {
+    width: 90vw;
+    margin:0 auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+
+
+}
+
+.blog{
+    border: 1px solid teal;
+    width:30%;
+    margin-top:2%;
+    padding:1%;
+    border-radius: 10px;
+
+}

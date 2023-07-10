@@ -6,7 +6,7 @@ const Nav = () => {
   return (
     <nav>
      
-        <a href="https://sssblog.queenbeandesigncafe.com" target="blank">Blog</a>
+       <Link to="/blog">Blog</Link>
         <Link to="/store">Shop</Link>
         <Link to="/university">Learn</Link>
     </nav>

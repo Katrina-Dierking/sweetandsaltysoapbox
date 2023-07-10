@@ -6,6 +6,7 @@ import Store from './views/store/Store';
 import University from './views/university/University';
 import Contact from './views/contact/Contact';
 import About from './views/about/About';
+import Blog from './views/blog/Blog';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
            <Route path="/university" element={<University />} />
            <Route path="/contact" element={<Contact />} />
            <Route path="/about" element={<About />} />
+           <Route path="/blog" element={<Blog />} />
         </Routes>
       </BrowserRouter>
     </section>
