@@ -7,15 +7,16 @@ import {
     melting, 
     salt,
     bubbles, 
-    gift
+    gift, 
+    soapbox
 } from '../../assets/images/index'
 import '../../assets/styles/shop.scss'
-import Header from '../header/Header'
+
 
 const SecondaryNav = () => {
   return (
     <section className='shop'>
-   <Header />
+   <img src={soapbox} alt="sweet and salty logo"></img>
       <div className="secondary">
         <div className="secIcon">
           <Link to="/sweets">
