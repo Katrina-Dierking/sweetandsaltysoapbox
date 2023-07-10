@@ -6,3 +6,4 @@ export { default as salt } from "../images/salt.png";
 export {default as bubbles } from '../images/air.png';
 export {default as logo} from '../images/logo.png'
 export {default as gift} from '../images/3d-present.png'
+export {default as soapbox} from '../images/SS-Soapbox-Logo.png'
