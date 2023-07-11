@@ -31,3 +31,27 @@ export const posts = [
          },
        ];
 
+export const teamMembers = [
+         {
+           id: uuid(),
+           name: "Katrina Dierking",
+           title: "Owner/Founder of Queen Bean Design Cafe",
+           about:
+             "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet dolor vel, ad culpa esse voluptates ipsam, iure excepturi aliquid amet eum omnis cum dignissimos maiores eius eos natus, magnam fuga!",
+         },
+
+         {
+           id: uuid(),
+           name: "Vanessa Boggs",
+           title: "President: Creative Team",
+           about:
+             "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet dolor vel, ad culpa esse voluptates ipsam, iure excepturi aliquid amet eum omnis cum dignissimos maiores eius eos natus, magnam fuga!",
+         },
+         {
+           id: uuid(),
+           name: "Channing Dierking",
+           title: "Video Editor",
+           about:
+             "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet dolor vel, ad culpa esse voluptates ipsam, iure excepturi aliquid amet eum omnis cum dignissimos maiores eius eos natus, magnam fuga!",
+         },
+       ];

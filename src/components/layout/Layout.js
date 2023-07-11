@@ -53,11 +53,10 @@ const Layout = ({children}) => {
         <div>
           <span class="dot"></span>
         </div>
-        <Header />
-        
+        <Header />  
         <main>{children}</main>
         <Footer />
-        </div>
+      </div>
     </layout>
   );
 }

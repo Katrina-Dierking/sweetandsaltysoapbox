@@ -1,3 +1,9 @@
+main {
+
+  overflow: hidden;
+
+}
+
 .about {
     display:flex;
     flex-direction:column;
@@ -13,4 +19,100 @@
     text-align: left;
     padding: 1%;
 
+}
+
+// @import "compass/css3";
+
+.blueContent, .greenContent, .whiteContent, .bottom{
+    font-family: Raleway;
+    
+    h2 {
+      font-weight:200;
+    }
+}
+
+//Blue Container
+.blueContent{
+  height:50vh;
+  background:#0C7D8B;
+  position:relative;
+  padding-top:2%;
+  border-top: 4px solid black;
+
+
+}
+
+//Blue Diagonal
+.blueDiagonal{
+   width: 0;
+   height:0;
+   border-top: 100px solid #0C7D8B;
+   border-left: 100vw solid transparent;
+}
+
+//Green Container
+.greenContent{
+  height:650px;
+  background:#97C839;
+  overflow:hidden;
+  position:relative;
+  
+  .aboutSelena {
+    width: 50vw;
+    height: 40vh;
+    margin: 0 auto;
+    border: 1px solid grey;
+    padding: 1% 5%;
+  }
+
+}
+
+.whiteDiagonal{
+   width: 0;
+   height:0;
+   position:absolute;
+   bottom:0px;
+   border-bottom: 100px solid white;
+   border-left: 100vw solid transparent;
+   
+}
+
+//Green Container
+.whiteContent{
+  height:200px;
+  background:white;
+  overflow:hidden;
+  border: 1px solid black;
+  width: 50vw;
+  margin: 0 auto;
+  margin-bottom: 2%;
+}
+
+.bottom{
+  background:#4e4e4e;
+  height:300px;
+  color:white;
+  font-family:Raleway;
+  padding-top:1%;
+  border: 5px solid black;
+}
+
+
+.teamMembers {
+  display:flex;
+  flex-direction: row;
+  width: 80vw;
+  justify-content: space-evenly;
+  align-items: center;
+  margin:0 auto;
+}
+.team {
+  border: 1px solid white;
+  width: 20vw;
+
+  p {
+    border: 1px solid grey;
+    margin: 5%;
+    padding: 3%;
+  }
 }
