@@ -10,7 +10,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1%;
-    border-bottom: 2px solid teal;
+    border-bottom: 2px solid #0097B2;
 
     h2{
         font-family: Raleway;
@@ -20,7 +20,6 @@
 
         img{
         width: 150px;
-        margin-right: 2%;
     }
 
     .inputSec {
@@ -30,8 +29,11 @@
         flex-direction: column;
         justify-content: space-evenly;
 
-        input {
-            width: 10vw;
+        input, button {
+            width: 7vw;
+        }
+        button{ 
+            background-color: #97C839;
         }
     }
 }
