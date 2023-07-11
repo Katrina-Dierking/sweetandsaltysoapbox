@@ -13,4 +13,20 @@ footer {
         border-radius:10px;
         border: 1px solid black;
     }
+
+    .socialIcons{
+
+        width: 30vw;
+        margin: 0 auto;
+
+        img {
+            width: 30px;
+            margin-right: 1%;
+        }
+
+    }
+}
+
+.socialIcons img:hover {
+    width: 40px;
 }

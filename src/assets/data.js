@@ -35,7 +35,7 @@ export const teamMembers = [
          {
            id: uuid(),
            name: "Katrina Dierking",
-           title: "Owner/Founder of Queen Bean Design Cafe",
+           title: "Owner/Founder of Queen Bean Design Cafe and Sweet & Salty Soapbox",
            about:
              "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet dolor vel, ad culpa esse voluptates ipsam, iure excepturi aliquid amet eum omnis cum dignissimos maiores eius eos natus, magnam fuga!",
          },
@@ -50,7 +50,7 @@ export const teamMembers = [
          {
            id: uuid(),
            name: "Channing Dierking",
-           title: "Video Editor",
+           title: "Video Editor in Training",
            about:
              "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet dolor vel, ad culpa esse voluptates ipsam, iure excepturi aliquid amet eum omnis cum dignissimos maiores eius eos natus, magnam fuga!",
          },

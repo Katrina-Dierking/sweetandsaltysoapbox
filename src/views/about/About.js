@@ -53,8 +53,8 @@ const [data] = useState(teamMembers)
 
         <section className="bottom">
           <h3>INTERNSHIPS</h3>
-          <p>Sweet & Salty Soapshop will be opening up positions for internships in 2024 for the following positions: </p>
-        
+          <p>Sweet & Salty Soapbox will be opening up positions for internships in 2024 for the following positions: </p>
+    
             <li>Video Editor</li>
             <li>Social Media Marketing</li>
             <li>Frontend Software Engineer</li>
