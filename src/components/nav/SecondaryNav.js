@@ -19,7 +19,7 @@ const SecondaryNav = () => {
    <img src={soapbox} alt="sweet and salty logo"></img>
       <div className="secondary">
         <div className="secIcon">
-          <Link to="/sweets">
+          <Link to="/desserts">
             <img src={pink} alt="pink cupcake"></img>
             <span className="linkOne">Dessert Soaps</span>
           </Link>
@@ -36,11 +36,11 @@ const SecondaryNav = () => {
           <img src={women} alt="female profile"></img>
           <span className="linkFour">Soap for Her</span>
         </Link>
-        <Link to="/his">
+        <Link to="/him">
           <img src={man} alt="man with beard"></img>
           <span className="linkFive">Soaps for Him</span>
         </Link>
-        <Link to="/bubbles">
+        <Link to="/bubble">
           <img src={bubbles} alt="green soap bubbles"></img>
           <span className="linkSix">Bubble Bath</span>
         </Link>

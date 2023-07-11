@@ -1,0 +1,7 @@
+export {default as Desserts} from '../../views/store/Desserts'
+export {default as Bubble} from '../../views/store/Bubble'
+export {default as Gifts} from '../../views/store/Gifts'
+export {default as Her} from '../../views/store/Her'
+export {default as Him} from '../../views/store/Him'
+export {default as Salts} from '../../views/store/Salts'
+export {default as Snarky} from '../../views/store/Snarky'

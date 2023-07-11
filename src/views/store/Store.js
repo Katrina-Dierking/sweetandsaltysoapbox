@@ -3,6 +3,7 @@ import SecondaryNav from '../../components/nav/SecondaryNav'
 import Footer from '../../components/footer/Footer'
 import "../../assets/styles/home.scss";
 
+
 const Store = () => {
   return (
     <div>
