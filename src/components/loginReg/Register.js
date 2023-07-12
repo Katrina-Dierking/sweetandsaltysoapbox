@@ -46,9 +46,10 @@ const Register = () => {
         <h3> Register</h3>
         <form>
           <section className="details">
-            <label htmlFor="name">Full Name</label>
+        
             <input
               type="text"
+              placeholder='Full name'
               className="input"
               id="name"
               {...register("name")}
@@ -56,9 +57,9 @@ const Register = () => {
             <p className="error-message">{errors?.name?.message}</p>
           </section>
           <section className="details">
-            <label htmlFor="username">Username</label>
             <input
               type="text"
+              placeholder='Username'
               className="input"
               id="username"
               {...register("username")}
@@ -67,9 +68,9 @@ const Register = () => {
           </section>
 
           <section className="details">
-            <label htmlFor="email">Email</label>
             <input
               type="email"
+              placeholder='Email'
               className="input"
               id="email"
               {...register("email")}
@@ -78,9 +79,9 @@ const Register = () => {
           </section>
 
           <section className="details">
-            <label htmlFor="password">Password</label>
             <input
               type="password"
+              placeholder='Password'
               className="input"
               id="password"
               {...register("password")}
@@ -89,9 +90,9 @@ const Register = () => {
           </section>
 
           <section className="details">
-            <label htmlFor="Confirm Password">Confirm Password</label>
             <input
               type="password"
+              placeholder='Confirm Passord'
               className="input"
               id="confirmPassword"
               {...register("confirmPassword")}
