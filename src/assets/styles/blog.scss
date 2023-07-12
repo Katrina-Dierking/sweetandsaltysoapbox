@@ -30,3 +30,24 @@
     border-radius: 10px;
 
 }
+
+.readMoreContent {
+    max-width: 40rem;
+    margin: 4rem auto;
+    background-color: antiquewhite;
+    border-radius: 5px; 
+    padding: 1%;
+}
+
+.long-text{
+    max-height:0; 
+    overflow: hidden;
+    display:inline-block;
+    transition: max-height .25s
+
+}
+
+.expanded {
+    max-height: 50rem;
+    transition: max-height 2s;
+}

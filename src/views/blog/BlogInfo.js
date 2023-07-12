@@ -1,10 +1,15 @@
 import React from 'react'
+import ReadMoreLess from '../../components/buttons/ReadMoreLess'
 
-const BlogInfo = ({title, body}) => {
+const BlogInfo = ({title, bodyIntro, body}) => {
   return (
     <section className = "blog">
         <h3>{title}</h3>
-        <p>{body}</p>
+    
+        <ReadMoreLess 
+          shortContent={bodyIntro}
+          longContent={body}
+          />
     </section>
   )
 }

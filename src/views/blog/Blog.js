@@ -4,6 +4,7 @@ import Layout from '../../components/layout/Layout'
 import "../../assets/styles/blog.scss"
 import BlogCard from './BlogCard'
 
+
 const Blog = () => {
 
     const [data] = useState(posts)
@@ -14,6 +15,7 @@ const Blog = () => {
             {data.map((post, index) => (
                 <BlogCard props={post} key={index} />
             ))}
+         
         </section>
         <aside>
         <h5>Previous posts:</h5>

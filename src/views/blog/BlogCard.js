@@ -6,7 +6,9 @@ const BlogCard = ({props}) => {
    
      <BlogInfo
         title={props.title}
+        bodyIntro={props.bodyIntro}
         body={props.body}
+
      />
    
   )
