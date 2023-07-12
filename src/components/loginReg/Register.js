@@ -1,24 +1,38 @@
 import React from 'react'
 import {useForm} from 'react-hook-form'
-import {zodResolver} from '@hookform/resolvers/zod'
-import * as z from 'zod'
+import {yupResolver} from '@hookform/resolvers/yup'
+import * as yup from 'yup'
 import "../../assets/styles/register.scss";
 
-const formSchema = z.object({
-  name: z.string().min(1, "Full name is required"),
-  username: z.string().min(1, "Username is required"),
-  email: 
-    z.string()
-    .min(1, "Email is required")
-    .email("Please give a valid email"),
+const formSchema = yup.object({
+  name: yup
+    .string()
+    .required("* Full name is required"),
+  username: yup
+    .string()
+    .required("* Username is required"),
+  email: yup
+    .string()
+    .required("* Email is required")
+    .email("* Please give a valid email"),
+  password: yup
+    .string()
+    .min(6, "* Password must be at least 6 characters"),
+  confirmPassword: yup
+    .string()
+    .oneOf([yup.ref("password")], "Password must match"),
 });
 
 
 
 const Register = () => {
 
-    const {register, handleSubmit, formState: {errors}} = useForm({
-      resolver: zodResolver(formSchema)
+    const {
+      register, 
+      handleSubmit, 
+      formState: {errors}
+    } = useForm({
+      resolver: yupResolver(formSchema),
     });
     const onFormSubmit = (data) => {
       console.log(data)
@@ -55,12 +69,34 @@ const Register = () => {
           <section className="details">
             <label htmlFor="email">Email</label>
             <input
-              type="text"
+              type="email"
               className="input"
               id="email"
               {...register("email")}
             />
             <p className="error-message">{errors?.email?.message}</p>
+          </section>
+
+          <section className="details">
+            <label htmlFor="password">Password</label>
+            <input
+              type="password"
+              className="input"
+              id="password"
+              {...register("password")}
+            />
+            <p className="error-message">{errors?.password?.message}</p>
+          </section>
+
+          <section className="details">
+            <label htmlFor="Confirm Password">Confirm Password</label>
+            <input
+              type="password"
+              className="input"
+              id="confirmPassword"
+              {...register("confirmPassword")}
+            />
+            <p className="error-message">{errors?.confirmPassword?.message}</p>
           </section>
 
           <button type="submit">Submit</button>

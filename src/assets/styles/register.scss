@@ -1,9 +1,9 @@
 .regContainer {
     width: 30vw;
-    background-color: beige;
-    margin: 0 auto;
+    background-color: teal;
+    margin: 20px auto;
     border: 1px solid grey;
-    padding: 1%;
+    padding: 3% 0;
 
 
     .details {
@@ -22,7 +22,7 @@
     }
 
     .error-message {
-        color:red;
+        color:white;
         font-size: 12px;
     }
 }
