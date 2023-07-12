@@ -1,0 +1,28 @@
+.regContainer {
+    width: 30vw;
+    background-color: beige;
+    margin: 0 auto;
+    border: 1px solid grey;
+    padding: 1%;
+
+
+    .details {
+        width: 50%;
+        margin: 0 auto;
+        text-align: left ;
+
+    }
+
+    .input {
+        margin-left: 5px;
+    }
+    button {
+        width: 50%;
+        background-color: #97C839;
+    }
+
+    .error-message {
+        color:red;
+        font-size: 12px;
+    }
+}
