@@ -5,7 +5,9 @@ const TeamMemberCard = ({props}) => {
   return (
    <Team 
     name={props.name.toUpperCase()}
+    img={props.img}
     title={props.title}
+    sub={props.sub}
     about={props.about}
    />
   )

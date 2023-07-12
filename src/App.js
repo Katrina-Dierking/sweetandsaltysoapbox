@@ -17,6 +17,7 @@ import {
   Snarky,
 } from "./views/store/index"
 
+
 function App() {
   return (
     <section className="App">
@@ -35,6 +36,7 @@ function App() {
            <Route path="/him" element={<Him />} />
            <Route path="/salts" element={<Salts />} />
            <Route path="/snarky" element={<Snarky />} />
+
         </Routes>
       </BrowserRouter>
     </section>

@@ -33,12 +33,11 @@ main {
 
 //Blue Container
 .blueContent{
-  height:50vh;
+  height:65vh;
   background:#0C7D8B;
   position:relative;
   padding-top:2%;
-  border-top: 4px solid black;
-
+  border-top: 4px solid black
 
 }
 
@@ -46,7 +45,7 @@ main {
 .blueDiagonal{
    width: 0;
    height:0;
-   border-top: 100px solid #0097B2;
+   border-top: 100px solid #0C7D8B;
    border-left: 100vw solid transparent;
 }
 
@@ -109,6 +108,7 @@ main {
   justify-content: space-evenly;
   align-items: center;
   margin:0 auto;
+  height: 50vh;
 }
 .team {
   border: 1px solid white;
@@ -119,4 +119,13 @@ main {
     margin: 5%;
     padding: 3%;
   }
+
+  img {
+    width: 150px;
+    border: 2px solid black;
+  }
+}
+
+.aboutSelena img{
+  width: 400px;
 }

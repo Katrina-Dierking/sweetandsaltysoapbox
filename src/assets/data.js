@@ -43,8 +43,10 @@ export const teamMembers = [
          {
            id: uuid(),
            name: "Katrina Dierking",
-           title:
-             "Owner/Founder of Queen Bean Design Cafe and Sweet & Salty Soapbox",
+           img:
+             "https://sssblog.queenbeandesigncafe.com/wp-content/uploads/2023/07/KatrinaDierking-3.png",
+           title: "Owner/Founder",
+           sub: "Queen Bean Design Cafe | Sweet & Salty Soapbox",
            about:
              "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet dolor vel, ad culpa esse voluptates ipsam, iure excepturi aliquid amet eum omnis cum dignissimos maiores eius eos natus, magnam fuga!",
            body:
@@ -54,7 +56,10 @@ export const teamMembers = [
          {
            id: uuid(),
            name: "Vanessa Boggs",
-           title: "President: Creative Team",
+           title: "Director",
+           sub: "Creative Team",
+           img:
+             "https://sssblog.queenbeandesigncafe.com/wp-content/uploads/2023/07/Vanessa.png",
            about:
              "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet dolor vel, ad culpa esse voluptates ipsam, iure excepturi aliquid amet eum omnis cum dignissimos maiores eius eos natus, magnam fuga!",
            body:
@@ -63,7 +68,8 @@ export const teamMembers = [
          {
            id: uuid(),
            name: "Channing Dierking",
-           title: "Video Editor in Training",
+           title: "Intern",
+           sub: "Video Editing Team",
            about:
              "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet dolor vel, ad culpa esse voluptates ipsam, iure excepturi aliquid amet eum omnis cum dignissimos maiores eius eos natus, magnam fuga!",
            body:

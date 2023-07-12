@@ -3,6 +3,7 @@ import Layout from '../../components/layout/Layout'
 import { teamMembers } from '../../assets/data'
 import '../../assets/styles/about.scss'
 import TeamMemberCard from './TeamMemberCard'
+import {choice} from '../../assets/images/index'
 
 const About = () => {
 
@@ -25,9 +26,7 @@ const [data] = useState(teamMembers)
           <section className="blueDiagonal"></section>
             <section className="whiteDiagonal"></section>
               <section className="aboutSelena">
-              
-              <h3>SELENA'S CHANCE</h3>
-              <img src="" alt="Selena Wampler"/>
+              <img src={choice} alt="Selena Wampler"/>
               <p>Selena is my daughter-in-law. She was an amazing mom, wife, and daughter.</p>
           
               <p>
@@ -35,11 +34,11 @@ const [data] = useState(teamMembers)
               </p>
         
               <p>
-              I decided then I didn't want that to be the reason anyone lost their loved one. 
+              I decided then I didn't want that to be the reason anyone else lost their loved one. 
               </p>
         
               <p>
-              Sweet and Salty Soapbox donates 10% of all profits to a scholarship in Selena's name to help moms battling addiction. We will announce when we are accepting nominations for Selena's Chance recipients. 
+              Sweet & Salty Soapbox donates 10% of all profits to a scholarship in Selena's name to help moms battling addiction. We will announce when we are accepting nominations for Selena's Chance recipients. 
               </p>
               </section>
           </section>
