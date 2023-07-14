@@ -3,6 +3,7 @@ import {useForm} from 'react-hook-form'
 import {yupResolver} from '@hookform/resolvers/yup'
 import * as yup from 'yup'
 import "../../assets/styles/register.scss";
+import { Link } from 'react-router-dom';
 
 const formSchema = yup.object({
   name: yup
@@ -46,10 +47,9 @@ const Register = () => {
         <h3> Register</h3>
         <form>
           <section className="details">
-        
             <input
               type="text"
-              placeholder='Full name'
+              placeholder="Full name"
               className="input"
               id="name"
               {...register("name")}
@@ -59,7 +59,7 @@ const Register = () => {
           <section className="details">
             <input
               type="text"
-              placeholder='Username'
+              placeholder="Username"
               className="input"
               id="username"
               {...register("username")}
@@ -70,7 +70,7 @@ const Register = () => {
           <section className="details">
             <input
               type="email"
-              placeholder='Email'
+              placeholder="Email"
               className="input"
               id="email"
               {...register("email")}
@@ -81,7 +81,7 @@ const Register = () => {
           <section className="details">
             <input
               type="password"
-              placeholder='Password'
+              placeholder="Password"
               className="input"
               id="password"
               {...register("password")}
@@ -92,7 +92,7 @@ const Register = () => {
           <section className="details">
             <input
               type="password"
-              placeholder='Confirm Passord'
+              placeholder="Confirm Passord"
               className="input"
               id="confirmPassword"
               {...register("confirmPassword")}
@@ -103,7 +103,9 @@ const Register = () => {
           <button type="submit">Submit</button>
         </form>
       </section>
-      <p>Already have an account? Login here.</p>
+      <p>
+        Already have an account? <Link to="/login">Login </Link>here.
+      </p>
     </>
   );
 }

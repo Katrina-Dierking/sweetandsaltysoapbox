@@ -16,6 +16,9 @@ import {
   Salts,
   Snarky,
 } from "./views/store/index"
+import Login from './components/loginReg/Login';
+import Reg from './components/loginReg/Reg';
+import Dashboard from './views/university/Dashboard';
 
 
 function App() {
@@ -36,7 +39,9 @@ function App() {
            <Route path="/him" element={<Him />} />
            <Route path="/salts" element={<Salts />} />
            <Route path="/snarky" element={<Snarky />} />
-
+           <Route path="/login" element={<Login />}/>
+           <Route path="/register" element={<Reg />} />
+           <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
       </BrowserRouter>
     </section>
