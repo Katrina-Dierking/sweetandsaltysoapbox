@@ -231,7 +231,7 @@ const Reg = () => {
             </button>
           </form>
           <p>
-            Already registered? <Link to="/login">Login</Link>
+            Already registered?<br /> <Link to="/login">Login</Link>
          
           </p>
         </section>

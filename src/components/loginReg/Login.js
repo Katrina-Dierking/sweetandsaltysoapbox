@@ -1,85 +1,116 @@
+import { useRef, useState, useEffect } from "react";
+// import AuthContext from "./context/AuthProvider";
 
-import React , {useRef, useState, useEffect } from 'react'
-import { Link } from 'react-router-dom';
+// import axios from "./api/axios";
+import { Link } from "react-router-dom";
+// const LOGIN_URL = "/auth";
 
 const Login = () => {
+  // const { setAuth } = useContext(AuthContext);
+  const userRef = useRef();
+  const errRef = useRef();
 
-    const userRef = useRef();
-    const errRef = useRef();
+  const [user, setUser] = useState("");
+  const [pwd, setPwd] = useState("");
+  const [errMsg, setErrMsg] = useState("");
+  const [success, setSuccess] = useState(false);
 
-    const [user, setUser] = useState(''); 
-    const [pwd, setPwd] = useState(''); 
-    const [errMsg, setErrMsg] = useState(''); 
+  useEffect(() => {
+    userRef.current.focus();
+  }, []);
 
-    //this will be replaced with routing to new page
-    const [success, setSuccess] = useState(false)
+  useEffect(() => {
+    setErrMsg("");
+  }, [user, pwd]);
 
-    useEffect(()=> {
-        userRef.current.focus();
-    }, [])
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-    useEffect(()=> {
-        setErrMsg('')
-    }, [user, pwd])
+    // try {
+    //   const response = await axios.post(
+    //     LOGIN_URL,
+    //     JSON.stringify({ user, pwd }),
+    //     {
+    //       headers: { "Content-Type": "application/json" },
+    //       withCredentials: true,
+    //     }
+    //   );
+    //   console.log(JSON.stringify(response?.data));
+    //   //console.log(JSON.stringify(response));
+    //   const accessToken = response?.data?.accessToken;
+    //   const roles = response?.data?.roles;
+    //   setAuth({ user, pwd, roles, accessToken });
+    //   setUser("");
+    //   setPwd("");
+      setSuccess(true);
+    // } catch (err) {
+    //   if (!err?.response) {
+    //     setErrMsg("No Server Response");
+    //   } else if (err.response?.status === 400) {
+    //     setErrMsg("Missing Username or Password");
+    //   } else if (err.response?.status === 401) {
+    //     setErrMsg("Unauthorized");
+    //   } else {
+    //     setErrMsg("Login Failed");
+    //   }
+    //   errRef.current.focus();
+    // }
+  };
 
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        console.log(user,pwd)
-        setUser('');
-        setPwd('');
-        setSuccess(true)
-    }
   return (
     <>
-        {success ? (
-            <section>
-                <h1>You are logged in!</h1>
-                <br></br>
-                <p>
-                    <Link to="/dashboard">Go to your Dashboard</Link>
-                </p>
-            </section>
-        ) : (
-      <section className="regContainer">
-        <p
-          ref={errRef}
-          className={errMsg ? "errmsg" : "offscreen"}
-          aria-live="assertive"
-        >
-          {errMsg}
-        </p>
-        <h1>Login</h1>
+      {success ? (
+        <section>
+          <h1>You are logged in!</h1>
+          <br />
+          <p>
+            <Link to="/dashboard">Dashboard</Link>
+          </p>
+        </section>
+      ) : (
+        <section className="regContainer">
+          <p
+            ref={errRef}
+            className={errMsg ? "errmsg" : "offscreen"}
+            aria-live="assertive"
+          >
+            {errMsg}
+          </p>
+          <h1>Login</h1>
+          <form onSubmit={handleSubmit}>
+            <label htmlFor="username">Username:</label>
+            <input
+              type="text"
+              id="username"
+              ref={userRef}
+              autoComplete="off"
+              onChange={(e) => setUser(e.target.value)}
+              value={user}
+              required
+            />
 
-        <form onSubmit={handleSubmit}>
-          <label htmlFor="username">Username:</label>
-          <input
-            type="text"
-            id="username"
-            ref={userRef}
-            autoComplete="off"
-            onChange={(e) => setUser(e.target.value)}
-            value={user}
-            required
-          />
-
-          <label htmlFor="password">Password:</label>
-          <input
-            type="password"
-            id="password"
-            onChange={(e) => setPwd(e.target.value)}
-            value={pwd}
-            required
-          />
-
-          <button>Login</button>
-          <p> Need an Account? </p>
-          <Link to="/register">Register</Link>
-        </form>
-      </section>
-        )}
+            <label htmlFor="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              onChange={(e) => setPwd(e.target.value)}
+              value={pwd}
+              required
+            />
+            <button>Login</button>
+          </form>
+          <p>
+            Need an Account?
+            <br />
+            <span className="line">
+              {/*put router link here*/}
+              <Link to="/register">Register</Link>
+            </span>
+          </p>
+        </section>
+      )}
     </>
   );
-}
+};
 
-export default Login
+export default Login;
