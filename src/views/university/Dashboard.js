@@ -1,6 +1,7 @@
 import React from 'react'
 import { qbu } from "../../assets/images/index";
 import "../../assets/styles/university.scss";
+import Courses from './courses/Courses';
 
 const Dashboard = () => {
   return (
@@ -37,6 +38,8 @@ const Dashboard = () => {
         <img src={qbu} alt="queen bean design university"></img>
         <h2>Queen Bean Design University</h2>
       </section>
+
+      <Courses />
 
       <section className="freeCourseSection">
         <h3>Enjoy the free courses and resources below:</h3>

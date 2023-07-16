@@ -1,0 +1,28 @@
+
+.coursesContainer {
+    width: 70vw;
+    height: 100vh;
+    margin:0 auto;
+}
+.cardContainer {
+ 
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+    margin: 10px auto;
+    height: 100vh;
+}
+
+.courseCard {
+    border: 1px solid black;
+    width: 350px;
+    height: 25vh;
+    padding: 1px;
+    margin-top:1%;
+}
+
+.buyCourse {
+    font-size: 14px;
+    margin-top: -2%;
+}

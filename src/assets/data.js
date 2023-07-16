@@ -76,3 +76,47 @@ export const teamMembers = [
              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae doloremque enim mollitia cum rem ullam, commodi ipsum corporis aut, dignissimos quasi voluptates minus voluptatem laboriosam ipsam maxime architecto obcaecati deserunt.",
          },
        ];
+
+  export const courses = [
+           {
+             id: uuid(),
+             title: "Soap Making for Beginners",
+             img: "",
+             cost: "$27",
+           },
+
+           {
+             id: uuid(),
+             title: "Building a Soap Making Business",
+             img: "",
+             cost: "$27",
+           },
+
+           {
+             id: uuid(),
+             title: "Starting an Online Business",
+             img: "",
+             cost: "$27",
+           },
+
+           {
+             id: uuid(),
+             title: "Building Your Own Website From Scratch",
+             img: "",
+             cost: "$47",
+           },
+
+           {
+             id: uuid(),
+             title: "Soap Making Journal",
+             img: "",
+             cost: "$7",
+           },
+
+           {
+             id: uuid(),
+             title: "Business Planning Journal",
+             img: "",
+             cost: "$17",
+           },
+         ];
