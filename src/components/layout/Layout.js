@@ -1,61 +1,64 @@
 import React from 'react'
 import Footer from '../footer/Footer'
 import Header from '../header/Header'
+import CTA from '../cta/CTA'
 import '../../assets/styles/layout.scss'
 import "../../assets/styles/home.scss";
 
 const Layout = ({children}) => {
   return (
     <layout>
-      <div class="wrapper">
+      <div className="wrapper">
         <div>
-          <span class="dot"></span>
+          <span className="dot"></span>
         </div>
         <div>
-          <span class="dot"></span>
+          <span className="dot"></span>
         </div>
         <div>
-          <span class="dot"></span>
+          <span className="dot"></span>
         </div>
         <div>
-          <span class="dot"></span>
+          <span className="dot"></span>
         </div>
         <div>
-          <span class="dot"></span>
+          <span className="dot"></span>
         </div>
         <div>
-          <span class="dot"></span>
+          <span className="dot"></span>
         </div>
         <div>
-          <span class="dot"></span>
+          <span className="dot"></span>
         </div>
         <div>
-          <span class="dot"></span>
+          <span className="dot"></span>
         </div>
         <div>
-          <span class="dot"></span>
+          <span className="dot"></span>
         </div>
         <div>
-          <span class="dot"></span>
+          <span className="dot"></span>
         </div>
         <div>
-          <span class="dot"></span>
+          <span className="dot"></span>
         </div>
         <div>
-          <span class="dot"></span>
+          <span className="dot"></span>
         </div>
         <div>
-          <span class="dot"></span>
+          <span className="dot"></span>
         </div>
         <div>
-          <span class="dot"></span>
+          <span className="dot"></span>
         </div>
         <div>
-          <span class="dot"></span>
-        </div>
+          <span className="dot"></span>
+        </div>        
+  
         <Header />  
         <main>{children}</main>
         <Footer />
+     
       </div>
     </layout>
   );

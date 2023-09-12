@@ -1,5 +1,5 @@
 import React from 'react'
-import {qbu} from '../../assets/images/index'
+import {qbu, university} from '../../assets/images/index'
 import '../../assets/styles/university.scss'
 
 import Footer from '../../components/footer/Footer'
@@ -13,10 +13,10 @@ const University = () => {
     <section className="universityContainer">
       <section className="uniHeader">
         <img src={qbu} alt="queen bean design university"></img>
-        <h2>Queen Bean Design University</h2>
+        <img src={university} className='uni' alt="univeristy with bee"></img>
       </section>
 
-      <Reg />
+      <Reg /> 
       <hr></hr>
 
       <Footer />

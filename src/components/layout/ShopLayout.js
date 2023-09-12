@@ -5,6 +5,7 @@ import Footer from '../footer/Footer'
 const ShopLayout = ({children}) => {
   return (
     <layout>
+      
         <SecondaryNav />
         <main>{children}</main>
         <Footer />

@@ -8,7 +8,7 @@
 
  .uniHeader{
     
-    width: 50vw;
+    width: 70vw;
     margin:0 auto;
     display:flex;
     flex-direction:row;
@@ -17,7 +17,11 @@
     padding: 1%;
     border-bottom: 2px solid #0097B2;
         img{
-        width: 200px;
+        width: 35%;
+    }
+
+    .uni {
+        margin-left: -36%;
     }
 
     

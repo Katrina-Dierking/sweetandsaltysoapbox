@@ -15,6 +15,9 @@ import {
   Him,
   Salts,
   Snarky,
+  Embeds,
+  Soap, 
+  BathProducts
 } from "./views/store/index"
 import Login from './components/loginReg/Login';
 import Reg from './components/loginReg/Reg';
@@ -42,6 +45,9 @@ function App() {
            <Route path="/login" element={<Login />}/>
            <Route path="/register" element={<Reg />} />
            <Route path="/dashboard" element={<Dashboard />} />
+           <Route path="/soap" element={<Soap />} />
+           <Route path="/embeds" element={<Embeds />} />
+           <Route path="/bathproducts" element={<BathProducts />} />
         </Routes>
       </BrowserRouter>
     </section>

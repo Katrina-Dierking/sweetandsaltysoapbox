@@ -56,8 +56,8 @@ export const teamMembers = [
          {
            id: uuid(),
            name: "Vanessa Boggs",
-           title: "Director",
-           sub: "Creative Team",
+           title: "Co-Founder",
+           sub: "Director: Creative Team",
            img:
              "https://sssblog.queenbeandesigncafe.com/wp-content/uploads/2023/07/Vanessa.png",
            about:
@@ -119,4 +119,16 @@ export const teamMembers = [
              img: "",
              cost: "$17",
            },
-         ];
+];
+
+ export const soap = [
+          {
+            id: uuid(),
+            title: "Sweater Weather",
+            img: "../../images/soaps/SweaterWeather.jpg",
+            altTag: "white bar with pumpkin on top and gold dust",
+            desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, deserunt officia. Commodi optio sit adipisci maxime? Voluptas harum error reprehenderit maiores! Quo numquam ducimus iure est inventore dolores dolore aliquid?",
+            cost: "$8.00",
+            purchase:"https://square.link/u/ZAogQvca",
+          }
+        ];
